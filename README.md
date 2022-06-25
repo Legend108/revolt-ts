@@ -1,1 +1,2 @@
-## A revolt bot library
+## A revolt bot handler
+
