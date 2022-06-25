@@ -4,7 +4,6 @@ import { Client, Message } from "revolt.js";
 export default {
   name: "message",
   run: async (client: Client, message: Message) => {
-    console.log("H");
     const prefix = process.env.PREFIX! || "!";
 
     if (message.content?.startsWith(prefix)) {
