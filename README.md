@@ -1,1 +1,1 @@
-# revolt-ts
+## A revolt bot library
