@@ -1,7 +1,7 @@
 require("dotenv").config();
 
 import { Client } from "revolt.js/dist/Client";
-
+import db from "./quickDB";
 import loadCommands from "./lib/loadCommands";
 import loadEvents from "./lib/loadEvents";
 
@@ -18,6 +18,9 @@ loadCommands(client);
     .catch(console.error);
 })();
 
-export default client;
+export default {
+  client,
+  db,
+};
 
 client.loginBot(process.env.TOKEN!);
